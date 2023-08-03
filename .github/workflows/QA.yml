@@ -30,3 +30,6 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
+    - name: Run Flake8
+      run: flake8 .
+      continue-on-error: true # Continue the workflow even if there are linting errors
